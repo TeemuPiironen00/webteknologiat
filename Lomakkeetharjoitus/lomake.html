@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+</html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lomake</title>
+    <link rel="stylesheet" href="tyyli.css">
+    <script src="lomake.js"></script>
+
+</head>
+<body>
+    <h1>Lomake</h1>
+    <form id="lomake" action="tulokset.html" method="post">
+        
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi" name="nimi" required>
+        <br>
+        <label for="sukupuoli">Sukupuoli:</label>
+        <input type="radio" id="mies" name="sukupuoli" value="mies" required>
+        <label for="mies">Mies</label>
+        <input type="radio" id="nainen" name="sukupuoli" value="nainen" required>
+        <label for="nainen">Nainen</label>
+        <br>
+        <label for="kieli">Kielitaito:</label>
+        <input type="checkbox" id="suomi" name="kieli" value="suomi">
+        <label for="suomi">Suomi</label>
+        <input type="checkbox" id="englanti" name="kieli" value="englanti">
+        <label for="englanti">Englanti</label>
+        <input type="checkbox" id="ruotsi" name="kieli" value="ruotsi">
+        <label for="ruotsi">Ruotsi</label>
+        <br>
+        <label for="kaupunki">Kaupunki:</label>
+        <select id="kaupunki" name="kaupunki" required>
+            <option value="Helsinki">Helsinki</option>
+            <option value="Tampere">Tampere</option>
+            <option value="Turku">Turku</option>
+            <option value="Oulu">Oulu</option>
+        </select>
+        <br>
+        <label for="kommentti">Kommentti:</label>
+        <textarea id="kommentti" name="kommentti"></textarea>
+        <br>
+        <input type="submit" value="Lähetä">
+    </form>
+</body>
+</html>
