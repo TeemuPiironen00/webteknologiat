@@ -3,46 +3,56 @@
 
 </html>
 <head>
-    <meta charset="UTF-8">
-    <title>Lomake</title>
-    <link rel="stylesheet" href="tyyli.css">
-    <script src="lomake.js"></script>
+ <meta charset="UTF-8">
 
 </head>
 <body>
     <h1>Lomake</h1>
+    
     <form id="lomake" action="tulokset.html" method="post">
-        
-        <label for="nimi">Nimi:</label>
-        <input type="text" id="nimi" name="nimi" required>
-        <br>
-        <label for="sukupuoli">Sukupuoli:</label>
-        <input type="radio" id="mies" name="sukupuoli" value="mies" required>
-        <label for="mies">Mies</label>
-        <input type="radio" id="nainen" name="sukupuoli" value="nainen" required>
-        <label for="nainen">Nainen</label>
-        <br>
-        <label for="kieli">Kielitaito:</label>
-        <input type="checkbox" id="suomi" name="kieli" value="suomi">
-        <label for="suomi">Suomi</label>
-        <input type="checkbox" id="englanti" name="kieli" value="englanti">
-        <label for="englanti">Englanti</label>
-        <input type="checkbox" id="ruotsi" name="kieli" value="ruotsi">
-        <label for="ruotsi">Ruotsi</label>
-        <br>
-        <label for="kaupunki">Kaupunki:</label>
-        <select id="kaupunki" name="kaupunki" required>
-            <option value="Helsinki">Helsinki</option>
-            <option value="Tampere">Tampere</option>
-            <option value="Turku">Turku</option>
-            <option value="Oulu">Oulu</option>
-        </select>
-        <br>
-        <br><button type="button" onclick="alert('AAPE PELAA KORIRA PELII')">paina</button> <br>
-        <label for="kommentti">Kommentti:</label>
-        <textarea id="kommentti" name="kommentti"></textarea>
-        <br>
-        <input type="submit" value="Lähetä">
+    <fieldset style="width: 50%">
+    <legend>Contact information:</legend>
+    <table style="width: 50%">
+            <tr>
+                <td><label for="First name">First name:</label></td>
+                <td><input type="text" id="Fname" name="Fname" required></td>
+                <td>Preferred contact method:</td>
+            </tr>
+            <tr>
+                <td><label for="Last name">Last name:</label></td>
+                <td><input type="text" id="Lname" name="Lname" required></td>
+                <td><input type="checkbox">&nbsp;&nbsp;&nbsp; Email</td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email:</label></td>
+                <td><input type="text" id="Email" name="Email" required></td>
+                <td><input type="checkbox">&nbsp;&nbsp;&nbsp; Telephone</td>
+            </tr>
+            <tr>
+                <td><label for="Telephone">Telephone:</label></td>
+                <td><input type="tel" id="Telephone" name="Telephone" required></td>            
+            </tr>
+    </table>
+    </fieldset>
+
+    <fieldset style="width:50%">
+        <legend>Feedback:</legend>
+        <table>
+            <tr>
+                <td><label for="Message subject">Message subject:</label> <input  type="text" id="Message subject"  name="Message subject" required></td>
+            </tr>
+            <tr>
+            
+                <td><textarea colspan="2" id="Message" name="Message" rows="15" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <td>  Attach a file: <input  type="file" id="file" name="Choose File" accept=".pdf,.doc,.docx,.txt"></td>
+            </tr>
+            <tr>
+            <td><input type="submit" value="Send"></td>
+            </tr>
+        </table>
+    </fieldset>
     </form>
 </body>
 </html>
