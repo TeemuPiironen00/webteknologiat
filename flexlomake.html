@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="tyylit.css">
+</head>
+
+<body>
+    <h1>Loma Lomake</h1>
+
+    <form>
+        <fieldset>
+            <legend>Contact information:</legend>
+            <div class="container">
+                <div class="input-container">
+                    <label for="First name">First name:</label>
+                    <input type="text" id="Fname" name="Fname" required>
+
+                </div>
+                <div class="input-container">
+                    <label for="Last name">Last name:</label>
+                    <input type="text" id="Lname" name="Lname" required>
+
+                </div>
+
+
+
+                <div class="input-container">
+                    <label for="Email">Email:</label>
+                    <input type="text" id="Email" name="Email" required>
+
+                </div>
+                <div class="input-container">
+                    <label for="Telephone">Telephone:</label>
+                    <input type="tel" id="Telephone" name="Telephone" required>
+                </div>
+            </div>
+
+            <div class="container" style=" justify-content: center; gap: 10px;">
+                <div class="input-container">
+                    Preferred contact method:
+                </div>
+                <div class="input-container" style="justify-content: flex-start; gap: 20px;">
+                    <input type="checkbox"> Email
+                </div>
+                <div class="input-container" style="justify-content: flex-start; gap: 20px;">
+                    <input type="checkbox"> Telephone
+                </div>
+            </div>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback:</legend>
+
+            <div class="container">
+                <div class="input-container" style="justify-content: flex-start; gap: 20px;">
+                    <label for="Message subject">Message subject:</label>
+                    <input type="text" id="Message subject" name="Message subject" required>
+                </div>
+
+
+                <div class="input-container">
+                    <textarea colspan="2" id="Message" name="Message" rows="15" cols="50" required></textarea>
+                </div>
+
+
+                <div class="input-container">
+                    Attach a file: <input type="file" id="file" name="Choose File" accept=".pdf,.doc,.docx,.txt">
+                </div>
+
+
+                <div class="input-container">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
