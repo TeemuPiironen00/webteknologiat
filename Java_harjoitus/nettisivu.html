@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>HTML script Tag</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="kuvat/favicon.ico">
+    <link type="text/css" href="css/styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6/2n9e4z5e5f5a5f5a5f5a5f5a5f5a5f5a5f5" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <iframe id="map-frame" src="https://www.google.com/maps?q=Yliopistonkatu36Lappeenranta&output=embed" width="100%"
+        height="850px" frameBorder="0">
+    </iframe>
+
+    <label for="name">Katuosoite:</label>
+    <input type="text" id="katuname" katuosoite="Nimi">
+
+    <label for="name">Kaupunki:</label>
+    <input type="text" id="kaupunkiname" kaupunki="Nimi">
+
+    <button class="button" onclick="updateMap()" id="search-button"> Hae</button>
+    <script defer src="scriptit/tiedosto.js"></script>
+
+</body>
+
+</html>
