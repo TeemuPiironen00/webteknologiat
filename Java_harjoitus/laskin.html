@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="kuvat/favicon.ico">
+    <!--link type="text/css" href="Tyylit/laskimentyyli.css" rel="stylesheet"-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body onload="init()">
+    <h1>Valitse numerot ja laske</h1>
+
+    <div class="mb-3 ">
+        <div class="d-flex align-items-between justify-content-between">
+
+
+            <div class="input-group p-4 ">
+                <button class="btn btn-primary" onclick="increaseNum1()">+</button>
+                <input type="number" id="num1" placeholder="Syötä ensimmäinen numero">
+
+                <button class="btn btn-primary" onclick="decreaseNum1()">-</button>
+            </div>
+            <div class="input-group p-4">
+                <select class=" form-select" id="operation">
+                    <option value="add">+</option>
+                    <option value="subtract">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">/</option>
+                </select>
+            </div>
+            <div class="input-group p-4">
+                <button class="btn btn-primary" onclick="increaseNum2()">+</button>
+                <input id="num2" placeholder="Syötä toinen numero">
+                <button class="btn btn-primary" onclick="decreaseNum2()">-</button>
+            </div>
+        </div>
+        <br>
+        <div class="d-grid gap-3">
+            <button class="btn btn-primary" onclick="calculate()">Laske</button>
+        </div>
+
+        <div class="input-group">
+            <p>Tulos: <span id="result"></span></p>
+        </div>
+        <script defer src="scriptit/laskin.js"></script>
+
+    </div>
+
+    </style>
+
+
+</body>
+
+</html>
