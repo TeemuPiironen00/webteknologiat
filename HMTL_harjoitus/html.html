@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>HTML-harjoitus</title> 
+    <title>HTML-harjoitus</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="scriptit/styleshee.css">
 </head>
+
 <body>
-    <h1>HTML-harjoitus</h1>
-    <p>Tämä on ensimmäinen HTML-harjoitukseni.</p>
+    <form>
+        <fieldset>
+            <div class="container">
+                <h1>HTML-harjoitus</h1>
+                <p>Tämä on ensimmäinen HTML-harjoitukseni.</p>
 
-<p>kursseja joita käyn tällä hetkellä </p>
+                <p>kursseja joita käyn tällä hetkellä </p>
+            </div>
 
-<br>
-<img src="kuvat/kuva.png" alt="Placeholder image">
-<br>
-<br>
-<table border="2" cellpadding="5" cellspacing="0">
-    <tr>
-        <th>Kurssi</th>
-        <th>Kurssin sisältö</th>
-    </tr>
-    <tr>
-        <td>Ohjelmoinnin perusteet</td>
-        <td>Kurssilla käytiin C# perusteet</td>
-    </tr>
-    <tr>
-        <td>Ohjelmistotuotanto</td>
-        <td>Tällä kurssilla käydään <a href="https://fi.wikipedia.org/wiki/Ohjelmistotuotanto">tuotantoa</a> läpi .</td>
-    </tr>
+            <div class="img-container">
+                <img src="kuvat/kuva.png" alt="Placeholder image">
+            </div>
 
-       <tr>
-        <td>webtekonologiat</td>
-        <td>kurssilla käydään HTML
-            <ol>
-                <li>opettaja oli Tommi</li>
-                <li>opettaja oli Liisa</li>
-                
-            </ol>
-        </td>
-    </tr>
-</table>
-<br>
-<img src="kuvat/kartta.jpg" alt="kampuskartta" width="400" height="250">
-<p>kuvassa kampus kartta</p>
+
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Kurssi</th>
+                        <th>Opettaja</th>
+                        <th>Arvosana</th>
+                    </tr>
+                    <tr>
+                        <td>Ohjelmoinnin perusteet</td>
+                        <td>Tommi</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://fi.wikipedia.org/wiki/Ohjelmistotuotanto">Ohjelmistotuotanto</a></td>
+                        <td>Jaana</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Webtekonologiat</td>
+                        <td>Tommi ja Liisa</td>
+                        <td>3</td>
+                    </tr>
+
+            </div>
+        </fieldset>
+
+
+
+
+        <fieldset>
+            <div class="container">
+                <div class="input-container">
+                    <img src="kuvat/kartta.jpg" alt="kampuskartta" width="400" height="250">
+                    <p>kuvassa kampus kartta</p>
+                </div>
+            </div>
+        </fieldset>
+
+    </form>
 </body>
