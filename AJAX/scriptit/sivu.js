@@ -9,7 +9,7 @@ function getNumber() {
         })
         .then(function (result) {
             document.getElementById("gif").style.display = "none";
-            document.getElementById("result").innerHTML += "<br>" + "<i>" + result + "</i>";
+
 
             let data = `
 <div class="accordion-item">
